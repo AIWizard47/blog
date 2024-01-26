@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+</head>
+<body style="font-family: 'Arial', sans-serif; background-color: #f2f2f2;">
+
+    <h1 style="color: #333333;text-align: center;">Welcome to My Blog's</h1>
+    {% for post in posts reversed %}
+    
+    <div>
+        <a href="/posts/{{post.id}}" style="text-decoration:none">
+        <div style="border: 1px solid #999999; padding: 10px; margin: 20px; background-color: #ffffff;">
+            <h1 style="font-size: 20px; line-height: 2; color: black;">{{post.title}}</h1>
+            <h3 style="color: black;font-size: 12px">{{post.created_at}}</h3>
+            <p style="color: #333333;">{{post.body|truncatewords:20}}</p>
+        </div>
+    </a>
+    </div>  
+    {% endfor %}
+
+</body>
+</html>
