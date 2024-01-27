@@ -32,7 +32,8 @@ To install the 'Blog' project on your PC, follow these steps:
    Create a virtual environment to isolate the project's dependencies from your system's packages. Use your preferred virtual environment manager to create a new environment. For example, using pipenv:
 
    ```
-   pipenv install
+   python -m venv venv
+   source venv/bin/activate   # On Windows, use 'venv\Scripts\activate'
    ```
 
 3. **Activate the Virtual Environment**:
@@ -44,7 +45,7 @@ To install the 'Blog' project on your PC, follow these steps:
    Install the required Python packages for the project. From the project's directory, run the following command:
 
    ```
-   pipenv install
+   pip install -r requirements.txt
    ```
 
 5. **Configure Database Connection**:
@@ -68,6 +69,7 @@ To install the 'Blog' project on your PC, follow these steps:
    Start the Django development server to run the project locally. From the project's directory, run the following command:
 
    ```
+   python manage.py createsuperuser
    python manage.py runserver
    ```
 
