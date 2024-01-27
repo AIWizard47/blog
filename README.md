@@ -36,6 +36,10 @@ To install the 'Blog' project on your PC, follow these steps:
    Create a virtual environment to isolate the project's dependencies from your system's packages. Use your preferred virtual environment manager to create a new environment. For example, using pipenv:
 
    ```
+   pip install virtualenvwrapper-win
+   mkvirtualenv 'name_of_your_project'
+   ```
+   ```
    python -m venv venv
    source venv/bin/activate   # On Windows, use 'venv\Scripts\activate'
    ```
