@@ -4,7 +4,7 @@ Author: AIWizard47
 ## Overview
 
 This is a Django blog project named 'Blog' that provides a platform for creating, editing, and managing blog posts. It features a user-friendly interface and intuitive navigation, making it easy for users to interact with the blog.
-you can you this link to post the your own blog.
+you can use this link to post your own blog.
 ```
 'your_localhost'/write/submit/URL/post
 ```
