@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write</title>
+</head>
+<body style="font-family: 'Arial', sans-serif; background-color: #f2f2f2;">
+
+    <form method="POST" action="post">
+        {% csrf_token %}
+        <h1>Headline</h1><textarea name="title" style="width: 1312px; height: 39px;"></textarea><br>
+        <h1>Descriptions</h1><textarea name="body" spellcheck="false" style="height: 266px; width: 1318px;"></textarea><br>
+        <input type="submit"/>
+    </form>
+    
+
+</body>
+</html>
